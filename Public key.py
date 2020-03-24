@@ -5,8 +5,8 @@ def generateKey(keySize):
     p = 0
     q = 0
     while p == q:
-        p = primeNum.generateLargePrime()
-        q = primeNum.generateLargePrime()
+        p = primeNum.generateLargePrime(keySize)
+        q = primeNum.generateLargePrime(KeySize)
     n = p * q
     while True:
         e = random.randrange(2 ** (keySize - 1), 2 ** keySize)

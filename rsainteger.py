@@ -32,7 +32,7 @@ def blockTotext(integer):
     block = [''] * blocks
     blockposition = 0
     counter = 0
-    while counter < ((49)*(blocks-1)):
+    while counter < 50 + (50*(blocks-1)):
         unicodeNumber = integer[blockposition] // (symbols ** NumberOfcharacterInBlock)
         block[blockposition] = chr(unicodeNumber) + block[blockposition]
         integer[blockposition] = integer[blockposition] % (symbols ** NumberOfcharacterInBlock)

@@ -3,8 +3,8 @@ def wrap(text, charactersPerBlock):
     numberOfBlocks = math.ceil(len(text) / charactersPerBlock)
     block = [''] * numberOfBlocks
     for x in range(numberOfBlocks):
-        block[x] = text[charactersPerBlock - 50: charactersPerBlock]
-        charactersPerBlock += 50
+        block[x] = text[charactersPerBlock - charactersPerBlock: charactersPerBlock]
+        charactersPerBlock += charactersPerBlock
 
     return block
 
